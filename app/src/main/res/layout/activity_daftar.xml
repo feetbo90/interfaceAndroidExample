@@ -1,0 +1,294 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        android:theme="@style/ToolbarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <pkm.andro.pkmapplication.customfonts.MMediumText
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/daftar"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout 
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <pkm.andro.pkmapplication.customfonts.MyTextView
+                android:id="@+id/namaLengkap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="@string/namaLengkap"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editNamaLengkap"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input"
+                android:inputType="text"
+                android:paddingLeft="12dp"
+                android:textColorHint="#C7C7C7"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/namaLengkap" />
+
+            <pkm.andro.pkmapplication.customfonts.MyTextView
+                android:id="@+id/alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:paddingTop="12dp"
+                android:text="@string/alamat"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.039"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editNamaLengkap" />
+
+            <EditText
+                android:id="@+id/editAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input"
+                android:inputType="text"
+                android:paddingLeft="12dp"
+                android:textColorHint="#C7C7C7"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/alamat" />
+
+
+            <pkm.andro.pkmapplication.customfonts.MyTextView
+                android:id="@+id/nomorhp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:paddingTop="12dp"
+                android:text="@string/nomorhp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.039"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editAlamat" />
+
+            <EditText
+                android:id="@+id/editNomorHp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:hint="@string/contohnoHp"
+                android:background="@drawable/bg_input"
+                android:inputType="number"
+                android:paddingLeft="12dp"
+                android:textColorHint="#C7C7C7"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nomorhp" />
+
+            <pkm.andro.pkmapplication.customfonts.MyTextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:paddingTop="12dp"
+                android:text="@string/username"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.039"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editNomorHp" />
+
+            <EditText
+                android:id="@+id/editUser"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input"
+                android:paddingLeft="12dp"
+                android:textColorHint="#C7C7C7"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/username" />
+
+
+            <pkm.andro.pkmapplication.customfonts.MyTextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:paddingTop="12dp"
+                android:text="@string/password"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.039"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editUser" />
+
+            <EditText
+                android:id="@+id/editPass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input"
+                android:inputType="textPassword"
+                android:paddingLeft="12dp"
+                android:textColorHint="#C7C7C7"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password" />
+
+            <pkm.andro.pkmapplication.customfonts.MyTextView
+                android:id="@+id/confirmpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:paddingTop="12dp"
+                android:text="@string/confirmpassword"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.039"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editPass" />
+
+            <EditText
+                android:id="@+id/editConfirmPass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input"
+                android:inputType="textPassword"
+                android:paddingLeft="12dp"
+                android:textColorHint="#C7C7C7"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/confirmpass" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btnsave"
+                android:paddingLeft="15dp"
+                android:text="@string/save"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editConfirmPass"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>

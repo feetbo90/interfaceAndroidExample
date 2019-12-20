@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        android:theme="@style/ToolbarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <pkm.andro.pkmapplication.customfonts.MMediumText
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/order"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <pkm.andro.pkmapplication.customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="@string/bentukMaps"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/mapsample"
+                android:contentDescription="@string/username"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/head" />
+
+
+
+
+
+            <pkm.andro.pkmapplication.customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="@string/komunikasi"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="48dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/chat"
+                    android:paddingLeft="15dp"
+                    android:text="@string/telephone"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="48dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/phone"
+                    android:paddingLeft="15dp"
+                    android:text="@string/telephone"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

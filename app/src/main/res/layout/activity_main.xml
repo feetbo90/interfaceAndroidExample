@@ -1,0 +1,322 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        android:theme="@style/ToolbarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <pkm.andro.pkmapplication.customfonts.MMediumText
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/information"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/check"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_input"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/NilaiMurid"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/edit"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="20dp"
+                            android:contentDescription="@string/username"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <pkm.andro.pkmapplication.customfonts.MMediumText
+                            android:id="@+id/textNilaiMurid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:maxLines="2"
+                            android:text="@string/myprofile"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/NilaiMurid" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/checkData"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_input"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/foul"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/news"
+                            android:layout_marginTop="20dp"
+                            android:contentDescription="@string/username"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <pkm.andro.pkmapplication.customfonts.MMediumText
+                            android:id="@+id/textNilai"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:maxLines="2"
+                            android:text="@string/riwayat"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/foul" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/check2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_input"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/NilaiMurid2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/gallery"
+                            android:contentDescription="@string/username"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <pkm.andro.pkmapplication.customfonts.MMediumText
+                            android:id="@+id/textNilaiMurid2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:maxLines="2"
+                            android:text="@string/pantauan"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/NilaiMurid2" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/checkData2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_input"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/foul2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/faq"
+                            android:contentDescription="@string/username"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <pkm.andro.pkmapplication.customfonts.MMediumText
+                            android:id="@+id/textNilai2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:maxLines="2"
+                            android:text="@string/FAQ"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/foul2" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relative"
+                android:layout_width="239dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bgcard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear">
+
+                <pkm.andro.pkmapplication.customfonts.MMediumText
+                    android:id="@+id/textName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/lapor"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <pkm.andro.pkmapplication.customfonts.MMediumText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/peringatan"
+                android:textColor="@color/Red"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relative" />
+
+            <pkm.andro.pkmapplication.customfonts.MMediumText
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:inputType="textMultiLine"
+                android:singleLine="false"
+                android:gravity="center"
+                android:textColor="@color/grey_60"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/peringatan" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

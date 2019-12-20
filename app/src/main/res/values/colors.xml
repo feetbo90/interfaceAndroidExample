@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#FFB300</color>
+    <color name="colorPrimaryLight">#FFCA28</color>
+    <color name="colorAccent">#FFC107</color>
+    <color name="colorAccentDark">#FFB300</color>
+    <color name="colorAccentLight">#FFCA28</color>
+
+    <color name="md_blue_A400">#2979FF</color>
+    <color name="md_red_500">#F44336</color>
+
+    <color name="dividerColor">@color/md_grey_300</color>
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="windowBackground">#F2F4F7</color>
+    <color name="notifBadge">#FF6F00</color>
+    <color name="grey">#cccccc</color>
+
+    <color name="md_green_300">#81C784</color>
+    <color name="colorRed">#fd6803</color>
+    <color name="Red">#d40214</color>
+    <color name="textColor">#777777</color>
+    <color name="grey_3">#f7f7f7</color>
+    <color name="grey_5">#f2f2f2</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_90">#263238</color>
+
+    <color name="overlay_dark_10">#1A000000</color>
+    <color name="overlay_dark_20">#33000000</color>
+    <color name="overlay_dark_30">#4D000000</color>
+    <color name="overlay_dark_40">#66000000</color>
+    <color name="overlay_dark_50">#80000000</color>
+    <color name="overlay_dark_60">#99000000</color>
+    <color name="overlay_dark_70">#B3000000</color>
+    <color name="overlay_dark_80">#CC000000</color>
+    <color name="overlay_dark_90">#E6000000</color>
+    <color name="md_grey_300">#E0E0E0</color>
+
+</resources>

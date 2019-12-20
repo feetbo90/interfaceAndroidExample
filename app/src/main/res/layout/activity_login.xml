@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_splash" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head" />
+
+    <pkm.andro.pkmapplication.customfonts.MMediumText
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="#ffff"
+        android:textSize="29sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pkm.andro.pkmapplication.customfonts.MyTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:textColor="#ffff"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bginfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <!--    <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="48dp"
+            android:contentDescription="@string/password"
+            android:id="@+id/image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/view" />-->
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="48dp"
+        android:hint="@string/username"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:paddingLeft="12dp"
+        android:textColorHint="#C7C7C7"
+        android:background="@drawable/bg_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <EditText
+        android:id="@+id/editPass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="48dp"
+        android:hint="@string/password"
+        android:textSize="20sp"
+        android:textColorHint="#C7C7C7"
+        android:background="@drawable/bg_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editUsername"
+        tools:layout_editor_absoluteY="270dp"
+        android:paddingLeft="12dp" />
+
+    <Button
+        android:id="@+id/signin1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnsave"
+        android:paddingLeft="15dp"
+        android:text="@string/save"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <pkm.andro.pkmapplication.customfonts.MyTextView
+        android:id="@+id/belumpunyaakun"
+        android:layout_width="138dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/belumdaftar"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <pkm.andro.pkmapplication.customfonts.MyTextView
+        android:id="@+id/daftar"
+        android:layout_width="67dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/daftar"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toEndOf="@+id/belumpunyaakun"
+        app:layout_constraintTop_toBottomOf="@+id/signin1"
+        app:layout_constraintVertical_bias="0.0" />
+    <!--<Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="48dp"
+        android:text="@string/cancel"
+        android:textSize="15sp"
+        android:background="@drawable/btngrey"
+        android:paddingLeft="15dp"
+        android:textColor="#BFBFBF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signin1"
+        tools:layout_editor_absoluteY="270dp" /> -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
